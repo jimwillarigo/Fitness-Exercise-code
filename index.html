@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1 class="logo"><span>Fitness</span>Exercise</h1>
+            <div class="nav-links">
+                <ul id="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Fithub</a></li>
+                    <li><a href="">Schedule</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                <div class="social">
+                    <a href="#" onclick="showHideMenu()"><i class="fa fa-times"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href=""><i class="fa fa-youtube"></i></a>
+                    <a href="#" onclick="showHideMenu()"><i class="fa fa-bars"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="main">
+            <h2>Welcome to</h2>
+            <h1>Fitness Exercise</h1>
+            <p>We will beat your bottom till you reach the top</p>
+            <a href="" class="button">Learn More</a>
+        </div>
+    </div>
+    <script>
+        var menu = document.getElementById('menu');
+
+        function showHideMenu(){
+            menu.classList.toggle("opened");
+        }
+    </script>
+</body>
+</html>
